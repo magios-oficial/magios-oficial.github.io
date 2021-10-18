@@ -1,81 +1,907 @@
-<!DOCTYPE html>
-<html class="loading" lang="pt-BR" data-textdirection="ltr">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Magios Pay é uma plataforma para simplificar os pagamentos de clientes e os recebimentos das empresas. Não perca mais tempo simplefique com Magios!">
-    <meta name="keywords" content="magios, pay, pagamentos, recebimento, conta, eluander, boletos, recorrente">
-    <meta name="author" content="Eluander J. F. Lopes">
-    <title>MAGIOS PAY - EM BREVE</title>
-    <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu-modern.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/coming-soon.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
-    <style>
-        .comingsoonFlat {
-            background-image: url(./app-assets/images/backgrounds/bg-12.jpg) !important;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .comingsoonFlat {
-                width: 100% !important;
-            }
-        }
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>MAGIOS (Beta)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shorBtcut icon" type="image/x-icon" href="img/favicon.ico">
         
-        html body .la {
-            font-size: 3.2rem;
-        }
-    </style>
-
-</head>
-<body class="vertical-layout vertical-menu-modern 1-column comingsoonFlat blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
-    <div class="app-content content">
-        <div class="content-overlay"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-            </div>
-            <div class="content-body">
-                <section class="flexbox-container">
-                    <div class="col-12 d-flex align-items-center justify-content-center">
-                        <div class="col-md-6 col-10 p-0">
-                            <div class="card card-transparent box-shadow-0 border-0">
-                                <div class="card-content">
-                                    <div class="text-center">
-                                        <h5 class="card-text pb-2 white">EM DESENVOLVIMENTO, LANÇAREMOS EM BREVE</h5>
-                                        <img src="./app-assets/images/logo/magios-logo-full-horizontal.svg" class="img-responsive block mx-auto" alt="bg-img">
-                                        <!--<div id="clockFlat" class="card-text getting-started pt-1 mt-2 white d-inline-block"></div>-->
-                                       <div class="col-12 text-center pt-2">
-                                            <p class="socialIcon card-text">
-                                                <a href="https://www.linkedin.com/company/magios" style="font-size: larger !important;">
-                                                    <i class="la la-linkedin-square white"></i></a>
-                                                <a href="https://www.facebook.com/magios.com.br" style="font-size: larger !important;">
-                                                    <i class="la la-facebook-square white"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div> 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/dripicons.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+       
+    </head>
+    <body>
+        <header class="header-area">            
+            <div id="header-sticky" class="menu-area">
+                <div class="container">
+                    <div class="second-menu">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo/logo.svg" width="50" alt="logo"></a>
+                                    <small>Beta</small>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-9">
+                                <div class="responsive"><i class="icon dripicons-align-right"></i></div>
+                                <div class="main-menu text-right text-xl-right">
+                                     <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-sub">
+												<a href="#parallax">Início</a>
+											</li>
+                                            <li><a href="#about">Sobre</a></li>
+                                            <li><a href="#features">Recursos</a></li>
+                                            <li><a href="#screen">Imagens</a></li>     
+                                             <li class="has-sub"> 
+                                                 <a href="#screen">Outros</a>
+                                                 <ul>													
+													<li><a href="#pricing">Preços</a></li>
+													<li><a href="#testimonios">Clientess</a></li>
+													<li><a href="blog.html">Blog</a></li>     
+													<li><a href="blog-details.html">Blog Detalhes</a></li> 
+												</ul>
+                                             
+                                            </li>     
+											<!--<li><a href="#blog">Blog</a></li>-->
+                                            <li><a href="#contact">Contato</a></li>                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 text-right d-none d-xl-block">
+                                <div class="header-btn second-header-btn">
+                                    <a href="#" class="btn">Download</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </div>
-    </div>
-    <script src="./app-assets/vendors/js/vendors.min.js"></script>
-    <script src="./app-assets/vendors/js/coming-soon/jquery.countdown.min.js"></script>
-    <script src="./app-assets/js/core/app-menu.js"></script>
-    <script src="./app-assets/js/core/app.js"></script>
-    <script src="./app-assets/js/scripts/coming-soon/coming-soon.js"></script>
-</body>
+        </header>
+        <main>
+            <section id="parallax" class="slider-area slider-bg2 second-slider-bg d-flex fix" style="background-image: url(img/bg/pink-header-bg.png); background-position:right 0; background-repeat: no-repeat; background-size: 65%;">
+                
+                <div class="slider-shape ss-one layer" data-depth="0.10"><img src="img/shape/header-sape.png" alt="shape"></div>
+               
+     			 <div class="slider-shape ss-eight layer" data-depth="0.50"></div>
+                
+                
+               
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="slider-content second-slider-content left-center">         
+                                        <ul class="small-title mb-30">
+                                            <li>Novo</li>
+                                            <li>Aplicativo mobile</li>                                            
+                                        </ul>
+                                        <h2 data-animation="fadeInUp" data-delay=".4s">Simplifique com <span>Magios</span></h2>
+                                        <p data-animation="fadeInUp" data-delay=".6s">Com nosso novo aplicativo, acesse o <code>Magios</code> de onde estiver com seu celular ou navegador de internet e tenha acesso às suas contas e faça pagamentos sem precisar sair de casa.</p>
+                                        <div class="slider-btn mt-30 mb-30">
+                                            <a href="#" class="btn ss-btn" data-animation="fadeInUp" data-delay=".8s">Mais informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-lg-6">
+                                     <img src="img/bg/mobile.png" alt="shape" class="s-img">
+                                </div>
+                            </div>
+                    
+                </div>
+            </section>
+            <section id="about" class="services-area services-bg pt-25 pb-20" style="background-image: url(img/shape/header-sape2.png); background-position: right top; background-size: auto;background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-10">
+                            <div class="section-title text-center pl-40 pr-40 mb-45">
+                                <h2>Características</h2>
+                                <p>O <code>Magios</code> surgiu para simplificar a interação entre empresas e clientes. Nosso papel visa centralizar uma aréa de cobranças e disponibilizar de forma simplificada aos clientes acesso e controle de pagamentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-30">
+                            <div class="s-single-services active text-center">
+                                <div class="services-icon">
+                                   <img src="img/icon/f-icon1.png"/>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Clientes Simples</h5>
+                                    <ol>
+                                        <li><i class="far fa-star text-purple"></i> Gerenciador e atalho para pagamentos.</li>
+                                        <li><i class="far fa-star text-purple"></i> Controle de cobranças e prazos de vencimentos.</li>
+                                        <li><i class="far fa-star text-purple"></i> Gestão de cartões e assinaturas.</li>
+                                        <li><i class="far fa-star text-purple"></i> Notificações e lembretes.</li>
+                                    </ol>
+                                    <a href="#"><span>1</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-30">
+                            <div class="s-single-services text-center">
+                                 <div class="services-icon">
+                                  <img src="img/icon/f-icon3.png"/>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Empreendedor</h5>
+                                    <ol>
+                                        <li><i class="far fa-star text-purple"></i> Controle de clientes, cobranças, empreendimentos e funcionários.</li>
+                                        <li><i class="far fa-star text-purple"></i> Carteira de pagamentos recebidos.</li>
+                                        <li><i class="far fa-star text-purple"></i> Dashboard de situação da empresa.</li>
+                                        <li><i class="far fa-star text-purple"></i> Notificações e lembretes de cobranças efetuadas e atrasadas.</li>
+                                        <li><i class="far fa-star text-purple"></i> Encaminhamentos de boletos externos.</li>
+                                        <li><i class="far fa-star text-purple"></i> Nuvem de armazenamento de documentos.</li>
+                                        <li><i class="far fa-star text-purple"></i> Integração em sistemas externos por API.</li>
+                                        <li><i class="far fa-star text-purple"></i> Auditoria.</li>
+                                    </ol>
+                                    <a href="#"><span>2</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-30">
+                           <div class="s-single-services text-center">
+                                <div class="services-icon">
+                                  <img src="img/icon/f-icon2.png"/>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Todos ganham</h5>
+									<ol>
+                                        <li><i class="far fa-star text-purple"></i> Conforto e simplicidade.</li>
+                                        <li><i class="far fa-star text-purple"></i> Segurança operacional.</li>
+                                        <li><i class="far fa-star text-purple"></i> Baixo custo e disponibiliade para todos.</li>
+                                        <li><i class="far fa-star text-purple"></i> Controle de inadimplência.</li>
+                                        <li><i class="far fa-star text-purple"></i> Funcionando 24/7.</li>
+                                    </ol>
+                                    <a href="#"><span>3</span></a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+            </section>
+            <section class="choose-area pt-100 pb-60 p-relative" style="background-image: url(img/shape/header-sape3.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+                <div class="chosse-img" style="background-image:url(img/bg/easy-m-bg.png)"></div>
+                <div class="chosse-img2"><img src="img/bg/mobile2.png" alt="mobile"/></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5">
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="choose-wrap">
+                                <div class="section-title w-title left-align mb-25">
+                                    <h2>Solução fácil e perfeita para gestão de cobranças</h2>
+                                </div>
+                                <div class="choose-content">
+                                    <ol>
+                                        <li>Você ainda envia carta de cobrança para clientes?</li>
+                                        <li>Espera seu cliente ir até você e ainda enfrentar filas?</li>
+                                        <li>Mas você já percebeu que com isso esta perdendo tempo e dinheiro!</li>
+                                    </ol>
+                                    <h2 class="text-purple">Atualize-se, todos saem ganhando!</h2>
+                                    <p>O <code>Magios</code> vem para simplificar a vida do empreendedor e de seus clientes. Entregamos tudo que precisa na palma da sua mão, você gerencia
+                                    tudo de onde estiver e seu cliente também!</p>
+                                    <div class="second-services-content">
+                                        <h5 class="text-rosa">Vantagens</h5>
+                                        <ol>
+                                            <li><span class="text-purple">Baixo custo</span>. Os preços é variado de acordo com o tamanho e a nessecidade do empreendimento.</li>
+                                            <li><span class="text-purple">Solução para clientes esquecidinhos</span>. Alertas de vencimeto de cobranças são encaminhados a clientes 
+                                                para evitar atrasos por esquecimento.</li>
+                                            <li><span class="text-purple">Tempo e dinheiro</span>. O deslocamento do cliente até sua empresa exige tempo e dinheiro de ambas as partes. A entrada de 
+                                            dinheiro à sua empresa deve ser feito de forma ágil e sem complicação.</li>
+                                            <li><span class="text-purple">Sem custo</span>. Seus clientes tem acesso as cobranças do <code>Magios</code> sem nenhum custo.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="choose-btn mt-30">
+                                        <!--<a href="#"><span class="icon"><img src="img/icon/apple-icon.png" alt="apple-icon"></span> 
+                                            <span class="text"> Disponível na <strong>APP STORE</strong></span></a>-->
+                                        <a href="https://pay.magios.com.br" class="g-btn"><span class="icon"><img src="img/icon/web-icon.png" width="45" alt="web-icon"></span> 
+                                            <span class="text"> Disponível na <strong>Web</strong></span></a>
+                                        <a href="#" class="g-btn"><span class="icon"><img src="img/icon/g-play-icon.png" alt="google-play-icon"></span> 
+                                            <span class="text"> Disponível na <strong>Google Play</strong></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="app-work pt-70 pb-100 p-relative" style="background-image: url(img/shape/header-sape4.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">            
+                <div class="container">
+                    <div class="row align-items-center ">
+                       
+                        <div class="col-xl-6">
+                            <div class="choose-wrap">
+                                <div class="section-title w-title left-align mb-15">
+                                    <h2>Como funciona o Magios?</h2>
+                                </div>
+                                <div class="app-work-content mt-20">
+                                    <ul>
+                                        <li>
+                                            <div class="icon"><img src="img/icon/apw-Icon1.png"></div> 
+                                            <div class="text">
+                                                <h4>Crie um perfil</h4>
+                                                <p>Ao aceitar os termos, um novo perfil de usuários será cadastrado e encaminhado para aprovação. Um e-mail deve ser encaminhado quando perfil é aprovado.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="img/icon/apw-Icon2.png"></div> 
+                                            <div class="text">
+                                                <h4>Baixe gratuitamente</h4>
+                                                <p>Baixe o aplicativo mobile gratuitamente ou acesse via navegador <a href="https://pay.magios.com.br">clicando aqui</a>. 
+                                                    Então ao acessar o Magios já fica responsável em buscar por boletos e cobranças no sistema relacionados a você. 
+                                                    Todas as cobranças devem conter detalhes de quem gerou e dados para que você possa entrar em contato diretamente com beneficiário, em caso de dúvidas.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="img/icon/apw-Icon3.png"></div> 
+                                            <div class="text">
+                                                <h4>Gerencie empreendimentos</h4>
+                                                <p>Você terá a possibilidade de fazer uma assinatura para gerenciar um ou mais empreedimentos. Esta assinatura desbloqueia acesso a ferramentas de gestão empresarial
+                                                    para controle de clientes, cobranças e todas as outras funcionalides do Magios adiquiridos.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xl-6">
+                            <img src="img/bg/app-work-img.png" alt="app-work-img" class="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video-area pt-100 pb-100 p-relative">                
+                <div class="video-img2">
+                    
+                    <img src="img/bg/video-img.png" alt="mobile"/>
+                
+                    <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="popup-video"><img src="img/bg/play-btn.png" alt="play-btn.png"></a>
+                </div>
+                <div class="video-img3">
+                    <img src="img/shape/header-sape5.png" alt="header-sape4">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="video-wrap">
+                                <div class="section-title w-title left-align mb-25">
+                                    <h2>Veja como é fácil</h2>
+                                </div>
+                                <div class="video-content">
+                                    <p>O Magios esta revolucionando e simplificando pagamentos e o relacionamento entre empreendimento e clientes </p>
+                                     <ul>
+                                        <li>
+                                            <div class="icon"><img src="img/icon/vs-icon.png"></div> 
+                                            <div class="text">Link com página personalizada para o efetuação de pagamentos.</div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="img/icon/vs-icon.png"></div> 
+                                            <div class="text">Alerta de atrasos e inadimplência via e-mail e whatsapp.</div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="img/icon/vs-icon.png"></div> 
+                                            <div class="text">Carteira de pagamentos recebidos.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="screen" class="screen-area services-bg services-two pt-100 pb-70"  style="background-image: url(img/shape/header-sape4.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10">
+                            <div class="section-title text-center pl-40 pr-40 mb-50">                               
+                                <h2>Screenshots do aplicativo</h2>
+                                <p>Estamos trabalhando para sempre te dar o melhor resultado possível.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="img/gallery/screen-img01.png" alt="slide 1"></div>
+                              <div class="swiper-slide"><img src="img/gallery/screen-img02.png" alt="slide 1"></div>
+                              <div class="swiper-slide"><img src="img/gallery/screen-img03.png" alt="slide 1"></div>
+                              <div class="swiper-slide"><img src="img/gallery/screen-img04.png" alt="slide 1"></div>
+                              <div class="swiper-slide"><img src="img/gallery/screen-img05.png" alt="slide 1"></div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+
+          </div>
+                    </div>
+                    
+
+            </section>
+            <section class="faq-area pb-100" style="background-image: url(img/shape/header-sape6.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row align-items-end">                        
+                        <div class="col-lg-6">
+                            <div class="faq-img text-right">
+                                <img src="img/icon/logos-icons.png" alt="img" class="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-title left-align mb-50">                               
+                                <h2>Parcerias</h2>
+                                <p>Estamos entrando em contato com parcerias de diverssas regiões para deixar nosso sistema mais completo e benéfico a todos.</p>
+                            </div>
+                            <div class="faq-wrap">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn" type="button" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    Aliquam varius ligula nec leo tempus porta.
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                   Suspendisse vitae varius diam, a vulputate urna.
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                   Aliquam aliquet purus eget lacus pretium.
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="newslater-area pt-90 pb-100" style="background-image: url(img/bg/subscribe-bg.png);background-size: cover;" >
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10">
+                            <div class="section-title text-center pl-40 pr-40 mb-50">
+                                <h2>Inscreva-se para estar atualizado</h2>
+                                <p>E-mails informativos e de atualizações são encaminhados para inscritos se manter sempre atualizado com o que há de novo no Magios.</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row justify-content-center">          
+                       <div class="col-xl-6 col-lg-10">
+                            <form name="ajax-form" id="contact-form4" action="#" method="post" class="contact-form newslater">
+                               <div class="form-group">
+                                  <input class="form-control" id="email2" name="email" type="email" placeholder="Informe seu e-mail" value="" required> 
+                                  <button type="submit" class="btn btn-custom" id="send2">Inscreva-se agora</button>
+                               </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="pricing" class="pricing-area pt-100 pb-50" style="background-image: url(img/shape/header-sape7.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="section-title text-center mb-50">     
+                                <h2>Nossos planos e preços</h2>
+                                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
+                            </div>
+                             <nav class="pricing-tab mb-60">
+                        <span class="monthly_tab_title">
+                        Mensal                 </span>
+                        <span class="pricing-tab-switcher"></span>
+                        <span class="annual_tab_title">
+                        Anual                  </span>
+                     </nav>
+                        </div>
+                        
+                       
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-box text-center mb-60">
+                                <div class="pricing-head">                                  
+                                    <h4>Grátis</h4>
+                                    <div class="pricing-amount">
+                                       <div class="annual_price">
+                                          <sup><span class="currency">R$</span></sup>
+                                          <span class="price"> &nbsp; 0 </span>
+                                          <span class="subscription"> /Anual </span>
+                                       </div>
+                                       <div class="monthly_price">
+                                          <sup><span class="currency">R$</span></sup>
+                                          <span class="price"> &nbsp; 0 </span>
+                                          <span class="subscription"> /Mensal </span>
+                                       </div>
+                                    </div>
+                                    <h5>Moderno</h5>
+                                </div>
+                                
+                                <div class="pricing-body mb-40 text-left">
+                                    
+									<ul>
+										<li>Descomplica e efetua pagamentos</li>
+										<li>Controle de vencimento de cobranças</li>
+										<li>Centralização de cartões, cobranças e assinaturas</li>
+										<li>Notificações e lembretes</li>
+									</ul>
+                                </div>
+                                <div class="pricing-btn">
+                                    <a href="#" class="btn">Assinar Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-box active text-center mb-60">
+                                <div class="poppuler">
+                                    <span class="btn">Popular</span>
+                                </div>
+                                <div class="pricing-head">                                  
+                                    <h4>Básico</h4>
+                                    <div class="pricing-amount">
+                                       <div class="annual_price">
+                                          <sup><span class="currency">R$</span></sup>
+                                          <span class="price"> &nbsp; 421 </span>
+                                          <span class="subscription"> /Anual </span>
+                                       </div>
+                                       <div class="monthly_price">
+                                          <sup><span class="currency">R$</span></sup>
+                                          <span class="price"> &nbsp; 39 </span>
+                                          <span class="subscription"> /Mensal </span>
+                                       </div>
+                                    </div>
+                                    <h5>Descomplica</h5>
+                                </div>
+                                 <div class="pricing-body mb-40 text-left">
+                                    
+									<ul>
+										<li>Descomplica e efetua pagamentos</li>
+										<li>Controle de vencimento de cobranças</li>
+										<li>Centralização de cartões, cobranças e assinaturas</li>
+										<li>Notificações e lembretes</li>
+                                        <li>Até 20 clientes</li>
+                                        <li>Até 20 cobranças / mês</li>
+									</ul>
+                                </div>
+                                <div class="pricing-btn">
+                                    <a href="#" class="btn">Assinar Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-box active text-center mb-60">                 
+                                <div class="pricing-head">                                  
+                                    <h4>Personalizado</h4>
+                                    <div class="pricing-amount">
+                                       <div class="annual_price">
+                                          
+                                          <span class="price"> Consultar </span>
+                                          <span class="subscription"> /Anual </span>
+                                       </div>
+                                       <div class="monthly_price">
+                                          <span class="price"> Consultar </span>
+                                          <span class="subscription"> /Mensal </span>
+                                       </div>
+                                    </div>
+                                    <h5>Empresarial</h5>
+                                </div>
+                                
+                                  <div class="pricing-body mb-40 text-left">
+                                    
+									<ul>
+										<li>Descomplica e efetua pagamentos</li>
+										<li>Controle de vencimento de cobranças</li>
+										<li>Centralização de cartões, cobranças e assinaturas</li>
+										<li>Notificações e lembretes</li>
+                                        <li>Você define quantidade cliente</li>
+                                        <li>Você define quantidade cobranças / mês</li>
+									</ul>
+                                </div>
+                                <div class="pricing-btn">
+                                    <a href="#" class="btn">Assinar Agora!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonios" class="testimonial-area testimonial-p  pt-100 pb-70" style="background-image:url(img/bg/client-bg.png); background-repeat: no-repeat; background-position: right center;">
+                <div class="container">
+                    <div class="row">    
+                        <div class="col-lg-6">
+                             <div class="section-title center-align">                              
+                                <h2>Nossos clientes</h2>
+                                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                           
+                            <div class="testimonial-active">
+                                <div class="col-xl-4">
+                                    <div class="single-testimonial">
+                                        <div class="testi-author text-left">
+                                            <img src="img/testimonial/testi_avatar.png" alt="img">
+                                            <div class="ta-info">
+                                                <h6>Mr Jone Dose</h6>
+                                                <span>Author</span>
+                                            </div>
+                                        </div>
+                                        <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
+                                        
+                                        <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
+                                        
+                                    </div>
+                                </div>
+                                 <div class="col-xl-4">
+                                    <div class="single-testimonial">
+                                       <div class="testi-author text-left">
+                                            <img src="img/testimonial/testi_avatar2.png" alt="img">
+                                            <div class="ta-info">
+                                                <h6>Mr Jone Dose</h6>
+                                                <span>Author</span>
+                                            </div>
+                                        </div>
+                                         <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
+                                         <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                                 <div class="col-xl-4">
+                                    <div class="single-testimonial">
+                                         <div class="testi-author text-left">
+                                            <img src="img/testimonial/testi_avatar3.png" alt="img">
+                                            <div class="ta-info">
+                                                <h6>Mr Jone Dose</h6>
+                                                <span>Web Developer</span>
+                                            </div>
+                                        </div>
+                                         <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
+                                        <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
+                                        
+                                    </div>
+                                </div>
+                                 <div class="col-xl-4">
+                                    <div class="single-testimonial">
+                                        <div class="testi-author text-left">
+                                            <img src="img/testimonial/testi_avatar.png" alt="img">
+                                            <div class="ta-info">
+                                                <h6>Mr Jone Dose</h6>
+                                                <span>Web Developer</span>
+                                            </div>
+                                        </div>
+                                        <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
+                                         <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
+                                        
+                                    </div>
+                                </div>
+                                 <div class="col-xl-4">
+                                    <div class="single-testimonial">
+                                        <div class="testi-author text-left">
+                                            <img src="img/testimonial/testi_avatar2.png" alt="img">
+                                            <div class="ta-info">
+                                                <h6>Mr Jone Dose</h6>
+                                                <span>Web Developer</span>
+                                            </div>
+                                        </div>
+                                        <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
+                                        <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+						
+                    </div>
+                </div>
+            </section>
+            <!--<section id="blog" class="blog-area p-relative pt-70" style="background-image: url(img/shape/header-sape8.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-10">
+                            <div class="section-title text-center mb-50">                               
+                                <h2>Our Latest Blog & News</h2>
+                                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-post mb-30">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html"><img src="img/blog/inner_b1.jpg" alt="img"></a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="b-meta mb-40">
+                                        <ul>                                           
+                                            <li><a href="#">20 jan 2019</a></li>                                            
+                                        </ul>
+                                    </div>
+                                    <h4><a href="blog-details.html">Making Distribut Product Team
+                                    Work More With Monday</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisi
+                                    cing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="admin">
+                                            <ul>
+                                                <li><img src="img/blog/admin-img.png" alt="test"></li>
+                                                <li><h6>Jhon Abraham</h6> Author</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                             <div class="single-post mb-30">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html"><img src="img/blog/inner_b2.jpg" alt="img"></a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="b-meta mb-40">
+                                        <ul>                                           
+                                            <li><a href="#">20 jan 2019</a></li>                                         
+                                        </ul>
+                                    </div>
+                                    <h4><a href="blog-details.html">Monthly Web Development Upto Cost Of JavaScript Ethics</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisi
+                                    cing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="admin">
+                                            <ul>
+                                                 <li><img src="img/blog/admin-img.png" alt="test"></li>
+                                                <li><h6>Jhon Abraham</h6> Author</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                             <div class="single-post mb-30">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html"><img src="img/blog/inner_b3.jpg" alt="img"></a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="b-meta mb-40">
+                                        <ul>                                           
+                                            <li><a href="#">20 jan 2019</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisi
+                                    cing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                     <div class="admin">
+                                            <ul>
+                                                 <li><img src="img/blog/admin-img.png" alt="test"></li>
+                                                <li><h6>Jhon Abraham</h6> Author</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+            <section id="contact" class="contact-area contact-bg  pt-50 pb-100 p-relative fix"  style="background-image: url(img/shape/header-sape8.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
+                <div class="container">
+             
+					<div class="row">
+						<div class="col-lg-6">
+                            <div class="contact-img2">
+                                <img src="img/bg/illustration.png" alt="test">
+                            </div>						
+						</div>
+						<div class="col-lg-6">
+                            <div class="section-title mb-40">                              
+                                <h2>Contato</h2>
+                                <p>Entre em contato estamos disponiveis para tirar todas sua dúvida do <code>Magios</code>. Informações de valores e funcionamento e próximas atualizações.</p>
+                            </div>
+						<form action="#" class="contact-form">
+							<div class="row">
+                            <div class="col-lg-12">
+                                <div class="contact-field p-relative c-name mb-20">                                    
+                                    <input type="text" placeholder="Nome">
+                                </div>                               
+                            </div>
+							 <div class="col-lg-12">                    
+                                <div class="contact-field p-relative c-email mb-20">                                    
+                                    <input type="text" placeholder="E-mail">
+                                </div>                                
+                            </div>
+							 <div class="col-lg-12">                      
+                                <div class="contact-field p-relative c-subject mb-20">                                   
+                                    <input type="text" placeholder="Celular">
+                                </div>
+                            </div>
+							
+                            <div class="col-lg-12">
+                                <div class="contact-field p-relative c-message mb-45">                                  
+                                    <textarea name="message" id="message" cols="10" rows="10" placeholder="Escreva brevemente aqui..."></textarea>
+                                </div>
+                                <button class="btn">Enviar mensagem</button>
+                            </div>
+                            </div>
+                        
+                    </form>
+						</div>
+					</div>
+                    
+                </div>
+               
+            </section>
+        </main>
+        <footer class="footer-bg footer-p pt-60" style="background-image: url(img/bg/f-bg.png); background-position: center top; background-size: auto;background-repeat: no-repeat;">            
+  
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="logo mt-15 mb-15">
+                                    <a href="#"><img src="img/logo/logo-magios-m-light.svg" alt="logo"></a>
+                                </div>
+                                <div class="footer-text mb-20">
+                                    <p>
+                                        O Magios é um projeto iniciado em 2020 e vem passando por diverssos aperfeiçoamentos para trazer toda confiabilidade, segurança e performace 
+                                        para atender todos nossos usuários com excelência.
+                                    </p>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Notícias</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>                                        
+                                        <li><a href="#">Parceiros</a></li>
+										<li><a href="#">Sobre</a></li>
+                                        <li><a href="#">Carreira</a></li>
+                                        <li><a href="#">Avaliações</a></li>
+                                        <li><a href="#">Termos & Condições</a></li>                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Links Úteis</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>
+                                        <li><a href="#">Início</a></li>
+                                        <li><a href="#">Sobre</a></li>
+                                        <li><a href="#">Serviços</a></li>
+                                        <li><a href="#">Projeto</a></li>
+                                        <li><a href="#">Equipe</a></li>                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-xl-3 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Contato</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <div class="f-contact">
+                                    <ul>
+                                    <li>
+                                        <i class="icon dripicons-phone"></i>
+                                        <span>Celular e Whatsapp<br>+55 (46) 99930-2905</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon dripicons-mail"></i>
+                                         <span><a href="mailto:suporte@magios.com.br">suporte@magios.com.br</a><br><a href="mailto:vendas@magios.com.br">vendas@magios.com.br</a></span>
+                                    </li>
+                                    <li>
+                                      <i class="fal fa-map-marker-alt"></i>
+                                         <span>85550-000<br>Rua Denir Framento, 39<br>Bairro Lisboa da Silva <br>Coronel Vivida - PR</span>
+                                    </li>
+                                </ul>
+                                    
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright-text">
+                                <p>&copy; 2020 &reg; Magios por <a href="https://eluander.com.br">Eluander Josué Frigo Lopes</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/one-page-nav-min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/paroller.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/js_isotope.pkgd.min.js"></script>
+        <script src="js/imagesloaded.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/parallax-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/element-in-view.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/main.js"></script>
+      
+    </body>
 </html>
